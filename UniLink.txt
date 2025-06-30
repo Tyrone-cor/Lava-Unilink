@@ -1,0 +1,97 @@
+# UniLink
+
+## Description
+
+**UniLink** is a university-based social media web application designed to enhance campus communication, streamline announcements, and promote organizational transparency. The platform connects students, organizations, and faculty, providing a centralized space for sharing updates, discussions, and resources.
+
+## Features
+
+- Organization and club pages
+- Post creation and threaded comments
+- Reactions (like, love, etc.) on posts and comments
+- Student profiles and course enrollment
+- Real-time notifications for announcements and interactions
+- Dashboard for personalized feeds and analytics
+- Role-based access for students, organization admins, and faculty
+- Search and filter for organizations, posts, and courses
+
+## Technologies Used
+
+- **Backend:** PHP (Laravel)
+- **Frontend:** React
+- **Database:** MySQL (or compatible, via Laravel)
+- **Other:** Inertia.js, Tailwind CSS, Vite, Radix UI, Lucide Icons
+
+## Database Structure Overview
+
+- **organizations**: Stores university clubs, societies, and departments.
+- **posts**: Announcements, updates, and discussions posted by organizations or users.
+- **comments**: Threaded replies to posts.
+- **reactions**: User reactions to posts and comments.
+- **students**: Student user profiles and authentication data.
+- **courses**: University courses and student enrollments.
+- **notifications**: Real-time and historical notifications for users.
+- **dashboards**: User-specific dashboard data and preferences.
+
+## Installation Guide
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-org/unilink.git
+   cd unilink
+   ```
+
+2. **Install PHP dependencies:**
+   ```sh
+   composer install
+   ```
+
+3. **Install JavaScript dependencies:**
+   ```sh
+   npm install
+   ```
+
+4. **Copy and configure environment variables:**
+   ```sh
+   cp .env.example .env
+   # Edit .env to match your database and mail settings
+   ```
+
+5. **Generate application key:**
+   ```sh
+   php artisan key:generate
+   ```
+
+6. **Run database migrations:**
+   ```sh
+   php artisan migrate
+   ```
+
+## How to Run the Project
+
+1. **Start the Laravel backend:**
+   ```sh
+   php artisan serve
+   ```
+
+2. **Start the Vite development server:**
+   ```sh
+   npm run dev
+   ```
+
+3. **Visit the application:**
+   Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+## Future Improvements
+
+- Mobile app support (React Native)
+- Direct messaging between users
+- Event management and RSVP system
+- Advanced analytics for organizations
+- Integration with university authentication systems (SSO)
+- Media uploads and galleries
+- Accessibility enhancements
+
+## License
+
+This project is licensed under the
